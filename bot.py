@@ -54,8 +54,14 @@ async def chat(message: types.Message):
     await message.answer(response.text)
 
 async def main():
-    print("BOT STARTED")
-    await dp.start_polling(bot)
+print("BOT STARTED")
 
-if __name__ == "__main__":
-    asyncio.run(main())
+```
+await bot.delete_webhook(drop_pending_updates=True)
+
+await dp.start_polling(bot)
+```
+
+if **name** == "**main**":
+asyncio.run(main())
+
